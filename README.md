@@ -22,7 +22,7 @@ The goal is not only to build a scalable detection pipeline but also to serve as
 - Source: [Harvard Dataverse Link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/POREXF)
 
 ### Video Dataset
--A real-world video sourced from **YouTube** is used to test detection on live traffic scenes:
+- A real-world video sourced from **YouTube** is used to test detection on live traffic scenes:
 - Source: [YouTube - Dhaka Traffic](https://www.youtube.com/watch?v=0B2-cR4GEjc&list=WL&index=72&t=22s)
 
 ---
@@ -83,7 +83,7 @@ pip install -r requirements.txt
 ```bash
 python scripts/main.py
 ```
--Set training parameters in config/config.yaml:
+Set training parameters in config/config.yaml:
 train: for baseline
 train_augmented: for augmented training
 
@@ -102,19 +102,19 @@ The output video will be saved and converted to .mp4 format using ffmpeg.
 
 ## Results
 Key findings from the analysis:
--Baseline Model: Performs well on common classes like cars and buses but struggles with rare classes like ambulances and police cars.
--Custom Model: Improved detection accuracy for Dhaka-specific vehicle types such as rickshaws and three-wheelers (CNG).
--Augmented Model: Enhanced background discrimination and recall for rare classes but slightly reduced overall mAP compared to the non-augmented model.
--Detailed results are available in result_visualization.ipynb.
+- Baseline Model: Performs well on common classes like cars and buses but struggles with rare classes like ambulances and police cars.
+- Custom Model: Improved detection accuracy for Dhaka-specific vehicle types such as rickshaws and three-wheelers (CNG).
+- Augmented Model: Enhanced background discrimination and recall for rare classes but slightly reduced overall mAP compared to the non-augmented model.
+- Detailed results are available in result_visualization.ipynb.
 
 ---
 
 ## Future Work
--Build an end-to-end real-time web app for Dhaka traffic monitoring
--Expand dataset to nighttime and rainy conditions
--Use larger YOLOv8 variants (e.g., v8m, v8l)
--Enhance recall for rare classes through advanced augmentation techniques.
--Address persistent misclassifications between visually similar classes (e.g., SUVs vs taxis).
+1. Build an end-to-end real-time web app for Dhaka traffic monitoring
+2. Expand dataset to nighttime and rainy conditions
+3. Use larger YOLOv8 variants (e.g., v8m, v8l)
+4. Enhance recall for rare classes through advanced augmentation techniques.
+5. Address persistent misclassifications between visually similar classes (e.g., SUVs vs taxis).
 
 ---
 
