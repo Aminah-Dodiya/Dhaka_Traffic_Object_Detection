@@ -29,7 +29,7 @@ The goal is not only to build a scalable detection pipeline but also to serve as
 
 ## Project Structure
 ```bash
-Dhaka_Traffic_Object_Detection
+Dhaka_Traffic_Object_Detection/
 ├── config/
 │   └── config.yaml
 ├── image/
@@ -50,8 +50,10 @@ Dhaka_Traffic_Object_Detection
 │   ├── preprocess.py
 │   ├── train.py
 │   ├── utils.py
-└── README.md
 ├── requirements.txt
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 ---
 
